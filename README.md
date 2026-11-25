@@ -39,6 +39,9 @@ Modern Windows Notepad introduced Markdown support, enabling formatted text and 
 
 The vulnerability arises when Notepad inadequately validates an untrusted hyperlink destination before handing it to Windows. A crafted destination may be treated as an execution request instead of an ordinary link. Under vulnerable conditions, this can result in unintended code execution in the user's security context.
 
+For example, a normal Markdown hyperlink looks like this:
+[Visit Google](https://google.com)
+
 The vulnerability does not inherently grant administrator or SYSTEM privileges, bypass UAC, or execute without user interaction.
 
 ## Attack Flow
